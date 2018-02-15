@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="relc7dfinal.AboutPageController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goToPage" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Go Back to Drum Machine" />
+      <TextArea fx:id="document" layoutX="14.0" layoutY="50.0" prefHeight="338.0" prefWidth="333.0" wrapText="true" />
+      <Button layoutX="445.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#setText" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="The Code" />
+      <Button layoutX="445.0" layoutY="97.0" mnemonicParsing="false" onMouseClicked="#setText" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="The Machine" />
+      <Button layoutX="445.0" layoutY="148.0" mnemonicParsing="false" onMouseClicked="#setText" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Playing and Stopping" />
+      <Button layoutX="445.0" layoutY="194.0" mnemonicParsing="false" onMouseClicked="#setText" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="The Person" />
+      <Label fx:id="hint" layoutX="356.0" layoutY="341.0" prefHeight="50.0" prefWidth="230.0" text="hover over buttons to see what they do!" wrapText="true" />
+   </children>
+</AnchorPane>

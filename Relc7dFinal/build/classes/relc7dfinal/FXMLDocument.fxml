@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="relc7dfinal.FXMLDocumentController">
+   <children>
+      <Button layoutX="272.0" layoutY="89.0" mnemonicParsing="false" onAction="#hiHit" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="hi-hat" />
+      <Button layoutX="188.0" layoutY="89.0" mnemonicParsing="false" onAction="#snareHit" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="snare drum" />
+      <Button layoutX="110.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#bassHit" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="bass drum" />
+      <Button layoutX="371.0" layoutY="89.0" mnemonicParsing="false" onAction="#playSequence" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="play" />
+      <Button layoutX="415.0" layoutY="89.0" mnemonicParsing="false" onAction="#stopSequence" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="stop" />
+      <Button fx:id="b1" layoutX="24.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="b2" layoutX="94.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="b3" layoutX="164.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="b4" layoutX="233.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="b5" layoutX="302.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="b6" layoutX="371.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="b7" layoutX="440.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="b8" layoutX="510.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s1" layoutX="24.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s2" layoutX="94.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s3" layoutX="164.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s4" layoutX="233.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s5" layoutX="302.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s6" layoutX="371.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s7" layoutX="440.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="s8" layoutX="510.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h1" layoutX="24.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h2" layoutX="94.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h3" layoutX="164.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h4" layoutX="233.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h5" layoutX="302.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h6" layoutX="371.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h7" layoutX="440.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button fx:id="h8" layoutX="510.0" layoutY="290.0" mnemonicParsing="false" onMouseClicked="#changeState" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="Unactive" />
+      <Button layoutX="460.0" layoutY="89.0" mnemonicParsing="false" onMouseClicked="#clear" onMouseEntered="#handleMouseEnter" onMouseExited="#handleMouseExit" text="clear" />
+      <Rectangle fx:id="rect" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="126.0" layoutX="19.0" layoutY="194.0" mouseTransparent="true" stroke="BLACK" strokeType="INSIDE" width="71.0" />
+      <Label fx:id="hint" layoutX="5.0" layoutY="378.0" onMouseEntered="#handleMouseEnter" prefHeight="17.0" prefWidth="264.0" text="Label" />
+      <MenuButton layoutX="6.0" layoutY="14.0" mnemonicParsing="false" text="MenuButton">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#handleSave" text="Save" />
+          <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+        </items>
+      </MenuButton>
+      <Button layoutX="526.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#goToPage" text="About" />
+      <Label layoutX="1.0" layoutY="204.0" text="bd" />
+      <Label layoutX="1.0" layoutY="249.0" text="sd" />
+      <Label layoutX="1.0" layoutY="294.0" text="hh" />
+      <Label layoutX="195.0" layoutY="27.0" text="Drum Machine ver 1.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
